@@ -10,53 +10,120 @@
     <div class="container">
         <header class="header">
             <nav class="nav-bar">
-            <h1 class="name">Rahul Chaudhary</h1>
+            <img id="logo" src="image/rclogo.png">
             <ul class="list">
+                <div class="nav" id="navbar">
                 <li><a href="#about" class="nav-links">About</a></li>
                 <li><a href="#skills" class="nav-links">Skills</a></li>
                 <li><a href="#projects" class="nav-links">Projects</a></li>
                 <li><a href="#contact" class="nav-links">Contact</a></li>
+                </div>
             </ul>
+            <button type="button" class="menu-button">
+                <img src="image/Hamburger.svg" class="menu-icon" id="menuIcon">
+            </button>
             </nav>
         </header>
-        <main class="main-content">
-            <section class="about">
-            <h2>About Me</h2>
-            <p>I am a Full Stack Developer with a passion for creating clean,user friendly web experiences.</p>
+        <div class="about">
+            <section id="about">
+                <div class="leftbox">
+                    <h1 class="name">Rahul Chaudhary</h1>
+                    <h2 class="role">Full Stack Developer</h2>
+                    <ul class="para"><li>Full Stack Developer with strong knowledge of HTML, CSS, JavaScript, Passionate about building
+                    user-friendly web applications and solving real-world problems through clean and efficient code.</li></ul>
+                    <h2 class="role">AWS Engineer</h2>
+                    <ul class="para">
+                        <li>Proficient in managing EC2 instances, including launching, configuring, and monitoring virtual servers.</li>
+                        <li>Experienced in creating and managing EBS volumes for persistent storage and backups.</li>
+                        <li>Skilled in configuring S3 buckets for storage, versioning, lifecycle policies, and access control.</li>
+                        <li>Knowledge of RDS and database services for deploying and managing relational databases in AWS.</li>
+                        <li>Hands-on experience with Elastic Load Balancers (ELB) to distribute traffic across multiple instances.</li>
+                        <li>Familiar with Route 53 for DNS management, domain registration, and routing policies.</li>
+                        <li> Strong understanding of IAM for user management, roles, and implementing security best practices.</li>
+                        <li>Experienced in monitoring resources and setting alarms using CloudWatch.</li>
+                        <li>Understanding of CloudFront CDN for content delivery and caching optimization.</li>
+                        <li>Knowledge of VPC for configuring private/public subnets, NAT gateways, and network ACLs.</li>                      
+                    </ul>
+                </div>
+                </section>
+                <div class="rightbox">
+                    <img class="image" src="image/Passport_Photo.jpeg">
+                </div>
+        </div>
+
+        <div class="skills">
+            <section id="skills">
+                <h2 class="heading">Skills</h2>
+                <div class="tech-skill">
+                <p class="skill">HTML</p>
+                <p class="skill">CSS</p>
+                <p class="skill">JavaScript</p>
+                <p class="skill">MySQL</p>
+                <p class="skill">Basic Java</p>
+                <p class="skill">AWS</p>
+                </div>
             </section>
-            <section>
-            <h2>Skills</h2>
-            <section class="skills">
-            <span class="skill">HTML</span>
-            <span class="skill">CSS</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">MySQL</span>
-            <span class="skill">Basic Java</span>
+        </div>
+
+        <div class="project">
+            <section id="projects">
+                <h2 class="heading">Projects</h2>
+                <div class="card">
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <ul class="para">
+                        <li>A personal website to showcase my work and skills.</li>
+                        <li>For Creation Used HTML, CSS and JavaScript</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="project-title">Online shopping</h3>
+                    <ul class="para">
+                        <li>Website for online shopping.</li>
+                        <li>For Creation Used In HTML CSS and JavaScript</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="project-title">Netflix Login-Page</h3>
+                    <ul class="para">
+                        <li>Website for login netflix.</li>
+                        <li>For Creation Used In HTML CSS and JavaScript</li>
+                    </ul>
+                </div>
+                 <div class="card">
+                    <h3 class="project-title">Creation IAM Groups and Assign Permissions</h3>
+                    <ul class="para">
+                        <li>Groups for Developers, Admins</li>
+                        <li>Attach Policies</li>
+                        <li>Add users to Groups</li>
+                        <li>For Creation Used AWS Services</li>
+                    </ul>
+                </div>
             </section>
+        </div>
+
+        <div class="contact">
+            <section id="contact">
+                <h2 class="heading">Contact</h2>
+                <div class="mail">
+                    <p class="para">Phone: <a href="tel:+917830819604" class="mail-link">📞 +917830819604</a>
+                    <p class="para">Email: <a href="mailto:chrahul7830@gmail.com" class="mail-link">chrahul7830@gmail.com</a></p>
+                    <p class="para">Linkedln: <a href="https://www.linkedin.com/in/rahulchaudhary2002/" class="mail-link">rahulchaudhary2002</a></p>
+                    <p class="para">GitHub: <a href="https://github.com/Rahulchaudhary7830" class="mail-link">Rahulchaudhary7830</a></p>
+                </div>
             </section>
-            <section>
-            <h2>Projects</h2>
-            <div class="card">
-                <h3>Portfolio Website</h3>
-                <p>A personal website to showcase my work and skills.</p>
-            </div>
-            <div class="card">
-                <h3>To-Do App</h3>
-                <p>A simple to-do list built JavaScript and local storage.</p>
-            </div>
-            </section>
-            <section class="contact">
-            <h2>Contact</h2>
-            <div class="mail">
-            <p>Email:<a href="mailto:chrahul7830@gmail.com" class="mail-link">chrahul7830@gmail.com</a></p>
-            <p>Linkedln:<a href="mailto:https://www.linkedin.com/in/rahulchaudhary2002/" class="mail-link">https://www.linkedin.com/in/rahulchaudhary2002/</a></p>
-            <p>GitHub:<a href="mailto:https://github.com/Rahulchaudhary7830" class="mail-link">https://github.com/Rahulchaudhary7830</a></p>
-            </div>
-            </section>
-        </main>
+        </div>
+        
+
         <footer class="footer">
             &copy 2025 Rahul Chaudhary.All rights reserved.
         </footer>
     </div>
+    <script>
+        const menuIcon = document.getElementById('menuIcon');
+        const navbar = document.getElementById('navbar');
+        menuIcon.addEventListener('click', () => {
+        navbar.style.display = (navbar.style.display === 'flex') ? 'none' : 'flex';
+        });
+    </script>
 </body>
 </html>

@@ -6,6 +6,15 @@
 body{
     height: 100%;
     width: 100%;
+    overflow-x:hidden ;
+}
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+    flex-direction: column;    
+  }
 }
 .header{
     background-color:#2c3e50;
@@ -14,97 +23,176 @@ body{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+@media screen and (min-width:768px){
+    .nav-bar{
+        width: 100%;
+    }
+}
+
 .nav-bar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
 }
-.name{
-    font-size:1.5rem;
+#logo{
+    height: 45px;
+    border-radius: 100%;
+    margin-left: 50px;
+    
 }
 .list{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap:30px;
+    padding-right:100px;
+}
+.nav{
+    display: none;
+    gap: 1.5rem;
+}
+@media screen and (min-width:768px){
+    .nav{
+        display: flex;
+    }
 }
 .nav-links{
     color: white;
     text-decoration: none;
     font-weight:500;
-    font-size:16px;
+    font-size:1.5rem;
 }
 .nav-links:hover{
     color: blue;
     text-decoration: underline;
 }
-.main-content{
-    max-width: 700px;
-    margin: auto;
-    padding: 30px 20px;
-    background-color: white;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);   
-    text-align: center;
+.menu-button{
+    display: none;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+@media screen and (max-width:768px){
+   .menu-button{
+    display: block;
+} 
+}
+.menu-icon{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
 }
 .about{
-    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    gap:150px;
+    margin:50px;
+}
+@media screen and (max-width:768px){
+    .about{
+        flex-direction: column;
+        gap:0px;
+    }   
+}
+.image{
+    height: 400px;
+    border-radius:100%;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+.name{
+    font-size:3rem;
+    font-weight: 800;
+}
+.role{
+    font-size:2.5rem;
+    font-weight:500;
+    color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.para{
+    font-size:1.5rem;
+}
+.skills{
+    margin:50px;
+}
+.heading{
+    font-size:2.5rem;
+    padding-bottom: 10px;
+}
+.skill{
+    background: #e0e7ee;
+    font-size:1.75rem;
+    height:200px;
+    width:200px;
+    border-radius: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+}
+.skill:hover{
+    transform: scale(1.25);
+    border-radius:25%;
+}
+.tech-skill{
+    padding-top: 10px;
+    display:flex;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:768px){
+    .tech-skill{
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }   
+}
+.project{
+    margin:50px;
+    margin-bottom: 20px;
+}
+.project-title{
+    font-size:2rem;
+    color:orange;
+    margin-bottom: 2px;
+}
+.card{
+   padding-top:10px;
+
+}
+.contact{
+    margin-left:50px;
+    margin-bottom: 25px;
+}
+.mail{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:768px){
+    .mail{
+        flex-direction: column;
+        gap:10px;
+    }   
+}
+.mail-link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: blue;
+}
+.mail-link:hover{
+    text-decoration: underline;
 }
 .footer{
     background-color:#2c3e50;
     color: white;
     padding: 15px 30px;
     text-align: center;
-    font-size:1rem;
+    font-size:1.5rem;
     font-weight: 500;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-}
-h2{
-    margin-bottom: 10px;
-    font-size:25px;
-}
-h3{
-    font-size: 20px;
-}
-p{
-    font-size: 18px;
-}
-.skills{
-    font-size:16px;
-    display:inline-block;
-    gap: 10rem;
-    padding: 8px 14px;
-    margin: 5px;
-    border-radius: 8px;
-}
-.skill{
-    background: #e0e7ee;
-    padding:0.25rem;
-    border-radius: 8px;
-    margin:0.5rem;
-}
-.card{
-    background: #f7f9fb;
-    padding: 15px;
-    margin: 10px auto;
-    border-radius: 10px;
-    max-width: 500px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-    text-align: left;
-}
-.mail{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-   text-align: left;
-   padding-left:25%;
-   max-width: 500px;
-}
-.mail-link{
-    text-decoration: none;
-    font-size: 1.25rem;
-}
-.mail-link:hover{
-    text-decoration: underline;
 }
