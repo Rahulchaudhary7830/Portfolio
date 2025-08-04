@@ -11,14 +11,15 @@
         <header class="header">
             <nav class="nav-bar">
             <img id="logo" src="image/rclogo.png">
-            <ul class="list">
-                <div class="nav" id="navbar">
-                <li><a href="#about" class="nav-links">About</a></li>
-                <li><a href="#skills" class="nav-links">Skills</a></li>
-                <li><a href="#projects" class="nav-links">Projects</a></li>
-                <li><a href="#contact" class="nav-links">Contact</a></li>
-                </div>
-            </ul>
+            <div class="nav" id="navbar">
+                <ul class="list">
+                    <li><a href="#about" class="nav-links">About</a></li>
+                    <li><a href="#skills" class="nav-links">Skills</a></li>
+                    <li><a href="#projects" class="nav-links">Projects</a></li>
+                    <li><a href="#contact" class="nav-links">Contact</a></li>
+                </ul>
+            </div>
+            
             <button type="button" class="menu-button">
                 <img src="image/Hamburger.svg" class="menu-icon" id="menuIcon">
             </button>
@@ -119,11 +120,13 @@
         </footer>
     </div>
     <script>
-        const menuIcon = document.getElementById('menuIcon');
-        const navbar = document.getElementById('navbar');
-        menuIcon.addEventListener('click', () => {
-        navbar.style.display = (navbar.style.display === 'flex') ? 'none' : 'flex';
-        });
+       const menuIcon = document.getElementById('menuIcon');
+const navbar = document.getElementById('navbar');
+
+menuIcon.addEventListener('click', () => {
+  navbar.style.display = (navbar.style.display === 'flex') ? 'none' : 'flex';
+});
+
     </script>
 </body>
 </html>
