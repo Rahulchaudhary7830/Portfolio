@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     height: 100%;
     width: 100%;
@@ -38,8 +41,10 @@ body{
     gap:20px;
 }
 .nav{
-    display: none;
+    display:flex;
     gap: 1.5rem;
+    max-width: 100%;
+    overflow-x: hidden;
 }
  @media screen and (max-width: 768px) {
     .nav {
@@ -101,6 +106,7 @@ body{
     border-radius:100%;
     margin-top: 100px;
     margin-right: 100px;
+    display: block;
 }
 .name{
     font-size:3rem;
